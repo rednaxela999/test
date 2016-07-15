@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>AngularJs Learn</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon"><!-- Favicon -->
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Совестимость с EDGE -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><!-- Адаптивность -->
+
+	<!-- Подключаем библиотеки -->
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<script src="libs/angularjs/angular.min.js"></script>
+	<!-- Наши рукописные стили -->
+	<link rel="stylesheet" href="css/fonts.css"><!-- Подключение шрифтов -->
+	<link rel="stylesheet" href="css/main.css"><!-- Основные стили -->
+	<link rel="stylesheet" href="css/media.css"><!-- Стили для разных разрешений экранов -->
+
+</head>
+
+<body ng-app><!-- Здесь пишем код -->
+
+	<input type="text" ng-model="name">
+	Privet, {{name}}
+	<input type="checkbox" ng-model="ShowCheck">
+	<div ng-show="ShowCheck">Оп, опа, оп-па-па</div>
+	<!-- Совместимость со старыми IE -->
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script><!-- jQuery -->
+	<!-- Здесь добавляем скрипты плагинов -->
+	
+	<!-- Стоп плагины -->
+	<script src="js/common.js"></script><!-- Собственные скрипты -->
+	
+</body>
+</html>
